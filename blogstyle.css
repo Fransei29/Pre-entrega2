@@ -1,0 +1,336 @@
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+}
+main {
+    text-align: center;
+}
+.texto1 {
+    margin-top: 1px;
+    text-decoration:none;
+    color: rgb(15, 15, 15);
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.texto {
+    margin-top: 0;
+    padding-top: 0;
+}
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 5px 2px rgb(36, 35, 35);
+    width: 850px;
+    padding: 20px;
+    margin: 20px;
+    background:linear-gradient(to bottom, #4a5258, #3c4550);
+    border-radius: 2rem;
+}
+.container img, .imagenes {
+    width: 350px; 
+    height: auto;
+    margin-right: 20px; 
+    text-align: center;
+    position: relative;
+    border-radius: 10%;
+    border: 0.5px solid black;
+    transition: transform 1s;
+    cursor: pointer;
+}
+.imagenes:hover {
+    transform: scale(1.7);
+ }
+header {
+    background-color:  rgb(41, 49, 56);
+    color: rgba(228, 228, 241, 0.795);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    z-index: 2000;
+}
+h2 {
+    font-size: 20px;
+    padding-top: 25px;
+}
+footer {
+    background-color: rgb(41, 49, 56);
+    padding: 20px;
+    color:white;
+    text-align: left;
+    font-size: 16px;
+}
+iframe {
+    border-radius: 5%;
+}
+.videaso {
+    display: flex;
+    flex-direction: row;
+}
+h4 {
+    padding-top: 120px;
+    padding-right: 10px;
+}
+nav {
+    background-color: rgb(26, 25, 25);
+    color: white;
+    width: 100%;
+}
+nav .mobile{
+    display: none;
+}
+nav .mobile .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+}
+nav .mobile .header .more button {
+    border: none;
+    background-color: red;
+    padding: 15px;
+    cursor: pointer;
+}
+nav .logo {
+    min-width: 240px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+}
+nav a:hover {
+    color: black;
+    background-color:rgb(56, 141, 141);
+}
+nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: black; 
+    padding: 0 20px;
+    z-index: 1; 
+}
+nav .desktop .primary, nav .desktop .secondary {
+    display: flex;
+
+}
+nav .desktop .secondary.mini {
+    display: none;
+}
+
+
+@media screen and (max-width: 720px) {
+    nav .logo {
+        min-width: 20px;
+    }
+    nav .secondary.full {
+        display: none;
+    }
+    nav .secondary.mini {
+        display: block !important;
+    }
+    nav .secondary.mini .submenu {
+        background-color: black;
+        position: absolute;
+        display: none;
+        width: 200px;
+        right: 0;
+    }
+    nav .secondary.mini:hover .submenu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav .desktop {
+        display: none;
+    }
+    nav .mobile {
+        display: block;
+    }
+}
+.collapsed {
+    display: none;
+}
+#whatsapp-icon {
+    position: fixed;
+    bottom: 27px; 
+    right: 20px;
+    z-index: 10;
+}
+
+#whatsapp-icon img {
+    width: 45px; 
+    height: 45px;
+}
+.bo122 {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: 18px !important;
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: black !important;
+    text-align: var(--bs-body-text-align);
+    background-color: #6c757d !important;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent; 
+}
+.logo i {
+    width: 200%;
+}
+.foto, .w-100 {
+    height: 600px !important;
+}
+/*FACTORY         ------- ------- */
+
+.container122 {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Titulo Titulo Titulo"
+      "First First Img"
+      "Second Second Img2"
+      "Third Third Img3";
+    text-align: center;
+    place-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  span {
+    text-decoration: underline;
+    font-weight: bold ;
+  }
+  
+  .Titulo { 
+    background-image: url('https://img.freepik.com/premium-photo/world-international-coffee-day_927089-3577.jpg?w=740');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    grid-area: Titulo;
+    padding-top: 130px;
+    padding-bottom: 130px;
+ }
+  
+.First { 
+    grid-area: First;
+    padding: 20px;
+ }
+.Second { 
+    grid-area: Second;
+    padding: 20px;
+ }
+.Third { 
+    grid-area: Third;
+    padding: 20px;
+ }
+.Img { 
+    grid-area: Img;
+    padding: 20px;
+ }
+.Img2 { 
+    grid-area: Img2;
+    padding: 20px;
+ }
+.Img3 { 
+    grid-area: Img3;
+    padding: 20px;
+ }
+
+#img8 {
+    border-radius: 5%;
+    padding-bottom: 10px;
+}
+  
+@media only screen and (max-width: 880px) { 
+    .container12 {
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgb(121, 33, 33) !important;
+        
+    }
+    #img8 {
+        width: 100%;
+    }
+}
+
+/* FACTORY 2   ------ ------ */
+
+#bo177 {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    padding-bottom: 0;
+    background-color: rgb(129, 89, 89);
+    overflow: hidden;
+    place-items: center;
+}
+.container177 {
+    background-image: linear-gradient(to top,  #8a574f,  #53140b);
+    color: beige;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.img177 {
+    width: 100%;
+}
+.row22 {
+    place-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 20px;
+}
+.col22 {
+    color: beige;
+    font-family: 'Lucida Grande' ;
+    font-size: 30px;
+}
+@media only screen and (max-width: 880px) { 
+    .container177 {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgb(129, 89, 89) !important;
+        
+    }
+    #img8 {
+        width: 100%;
+    }
+}
+/*
+#girar {
+    animation: rotacion 10s linear infinite;
+    float: right;
+    border-radius: 50%;
+    margin: auto 0;
+}
+@keyframes rotacion{
+    from { 
+    transform: rotateZ(0deg);}
+    to{
+    transform: rotateZ(360deg);}
+ } */
+    
+ 
