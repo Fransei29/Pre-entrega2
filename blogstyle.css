@@ -27,10 +27,9 @@ main {
     background:linear-gradient(to bottom, #4a5258, #3c4550);
     border-radius: 2rem;
 }
-.container img, .imagenes {
+.container img, .imagenes , .img922{
     width: 350px; 
-    height: auto;
-    margin-right: 20px; 
+    height: auto; 
     text-align: center;
     position: relative;
     border-radius: 10%;
@@ -192,7 +191,7 @@ nav .desktop .secondary.mini {
 }
 /*FACTORY         ------- ------- */
 
-.container122 {  
+.container1223 {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -205,12 +204,15 @@ nav .desktop .secondary.mini {
       "Third Third Img3";
     text-align: center;
     place-items: center;
-    height: 100vh;
+    height: 100%;
+    margin: 0;
     font-family: sans-serif;
     font-size: 20px;
   }
   #bo27 {
-    background-color:  #694f4fda !important;
+    height: 100%;
+    margin: 0;
+    background-color:  #6b4848da !important;
     
   }
   span {
@@ -400,13 +402,13 @@ nav .desktop .secondary.mini {
     font-family: Verdana, sans-serif;
     font-size: 18px;
 }
-
-/**
-
 #girar {
     animation: rotacion 10s linear infinite;
+    align-items: center;
+    align-content: center;
+    width: 30%;
     float: right;
-    border-radius: 50%;
+    border-radius: 30%;
     margin: auto 0;
 }
 @keyframes rotacion{
@@ -414,6 +416,4 @@ nav .desktop .secondary.mini {
     transform: rotateZ(0deg);}
     to{
     transform: rotateZ(360deg);}
- } */
-    
- 
+ } 
